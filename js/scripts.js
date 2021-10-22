@@ -61,18 +61,18 @@ $(document).ready(function(){
   } else if (num <= 10) {
     sql += 1
   } else {
-    $("#error").show();
+    $("#error").slideDown();
   }
 
   if (!num) {
   } else if (js >= ruby && js >= c && js >= sql) {
-    $("#javascript").show();
+    $("#javascript").fadeIn();
   } else if (ruby >= js && ruby >= c && ruby >= sql) {
-    $("#ruby").show();
+    $("#ruby").fadeIn();
   } else if (c >= js && c >= ruby && c >= sql) {
-    $("#c").show();
+    $("#c").fadeIn();
   } else {
-    $("#sql").show();
+    $("#sql").fadeIn();
   }
 
   if (num >= 0 && num <= 10) {
