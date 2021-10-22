@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
   background-color:rgb(55, 115, 122);
   color:rgb(33, 44, 46);;
 }
@@ -27,11 +28,11 @@ h1 {
 
 h2 {
   text-align: center;
-  padding: 1em;
+  font-size: 2rem;
 }
 
-#quiz-head {
-  padding-bottom: 0;
+.question {
+  padding: 1em;
 }
 
 h3 {
@@ -48,14 +49,19 @@ form {
 }
 
 label {
-  width: 80%;
   margin-left: 3em;
+  padding: .5em;
   display:block;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.answer {
+  margin-left: 30px;
+  padding-left: .5em;
 }
 
 input {
@@ -76,7 +82,7 @@ label:hover input ~ .checkmark {
 }
 
 label input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: rgb(55, 115, 122);
 }
 
 .checkmark:after {
@@ -90,10 +96,10 @@ label input:checked ~ .checkmark:after {
 }
 
 label .checkmark:after {
-  left: 9px;
-  top: 9px;
-  width: 8px;
-  height: 8px;
+  left: 6px;
+  top: 6px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background: white;
 }
@@ -112,6 +118,7 @@ button {
 button:hover {
   width: 90%;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .result-img {
