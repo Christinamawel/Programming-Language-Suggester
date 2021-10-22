@@ -4,87 +4,110 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Programming-Language Suggester</title>
 </head>
 <body>
-  <h1>What Programming Language should I learn?</h1>
-  <div id="quiz">
-    <h2>Take this quiz to find out!</h2>
-    <form>
-      <div class="radio" id="job-q">
-      <h3>What job do you think you would most want to do or look into doing?</h3>
-        <label>
-          <input type="radio" name="job" value="engineer">
-          Software Engineer
-        </label>
-        <label>
-          <input type="radio" name="job" value="backend">
-          Back End Developer
-        </label>
-        <label>
-          <input type="radio" name="job" value="mobile">
-          Mobile Developer
-        </label>
-        <label>
-          <input type="radio" name="job" value="data">
-          Data Scientist
-        </label>
-      </div>
-      <div class="radio" id="popular-q">
-        <h3>Do you want to learn a more popular language or do you want to learn something more specialized?</h3>
-        <label>
-          <input type="radio" name="popular" value="mostPop">
-          I think want to be skilled in the most popular language
-        </label>
-        <label>
-          <input type="radio" name="popular" value="changePop">
-          I am ok with the popularity fluctuating so long as I can make good money quickly 
-        </label>
-        <label>
-          <input type="radio" name="popular" value="steadyPop">
-          I want to specialize in a language that has a steady popularity
-        </label>
-      </div>
-      <div class="radio" id="difficulty-q">
-        <h3>Do you want to learn something quickly and easily or do you want to be challenged?</h3>
-        <label>
-          <input type="radio" name="popular" value="easy">
-          I want to learn one of the easiest languages and quickest languages
-        </label>
-        <label>
-          <input type="radio" name="popular" value="hard">
-          I want to challenge myself to learn something difficult
-        </label>
-        <label>
-          <input type="radio" name="popular" value="med">
-          I want to learn a language somewhere in the middle
-        </label>
-      </div>
-      <div class="radio" id="color-q">
-        <h3>What is your favorite color?</h3>
-        <label>
-          <input type="radio" name="popular" value="blue">
-          Blue or purple
-        </label>
-        <label>
-          <input type="radio" name="popular" value="red">
-          red or orange
-        </label>
-        <label>
-          <input type="radio" name="popular" value="green">
-          green or yellow
-        </label>
-        <label>
-          <input type="radio" name="popular" value="black">
-          black or brown
-        </label>
-      </div>
-      <button type="submit">Results</button>
-    </form>
-  </div>
-  <div class="result" id="Javascript">
-    <h2>You should learn JavaScript!</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+  <div id="container">
+    <h1>What Programming Language should I learn?</h1>
+    <div id="quiz">
+      <img id="hero-img" src="img/hero.jpg" alt="programming illustration">
+      <h2 id="quiz-head">Take this quiz to find out!</h2>
+      <form>
+        <div class="radio" id="job-q">
+        <h3>What job do you think you would most want to do or look into doing?</h3>
+          <label>
+            <input type="radio" name="job" value="engineer">
+            Software Engineer
+          </label>
+          <label>
+            <input type="radio" name="job" value="backend">
+            Back End Developer
+          </label>
+          <label>
+            <input type="radio" name="job" value="mobile">
+            Mobile Developer
+          </label>
+          <label>
+            <input type="radio" name="job" value="data">
+            Data Scientist
+          </label>
+        </div>
+        <div class="radio" id="popular-q">
+          <h3>Do you want to learn a more popular language or do you want to learn something more specialized?</h3>
+          <label>
+            <input type="radio" name="popular" value="mostPop">
+            I think want to be skilled in the most popular language
+          </label>
+          <label>
+            <input type="radio" name="popular" value="changePop">
+            I am ok with the popularity fluctuating so long as I can make good money quickly 
+          </label>
+          <label>
+            <input type="radio" name="popular" value="steadyPop">
+            I want to specialize in a language that has a steady popularity
+          </label>
+        </div>
+        <div class="radio" id="difficulty-q">
+          <h3>Do you want to learn something quickly and easily or do you want to be challenged?</h3>
+          <label>
+            <input type="radio" name="popular" value="easy">
+            I want to learn one of the easiest languages and quickest languages
+          </label>
+          <label>
+            <input type="radio" name="popular" value="hard">
+            I want to challenge myself to learn something difficult
+          </label>
+          <label>
+            <input type="radio" name="popular" value="med">
+            I want to learn a language somewhere in the middle
+          </label>
+        </div>
+        <div class="radio" id="color-q">
+          <h3>What is your favorite color?</h3>
+          <label>
+            <input type="radio" name="popular" value="blue">
+            Blue or purple
+          </label>
+          <label>
+            <input type="radio" name="popular" value="red">
+            red or orange
+          </label>
+          <label>
+            <input type="radio" name="popular" value="green">
+            green or yellow
+          </label>
+          <label>
+            <input type="radio" name="popular" value="black">
+            black or brown
+          </label>
+        </div>
+        <button type="submit">Results</button>
+      </form>
+    </div>
+    <div class="result" id="javascript">
+      <img class="result-img" src="img/javascript.png" alt="javascript illustration">
+      <h2>You should learn JavaScript!</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+    </div>
+    <div class="result" id="C++">
+      <img class="result-img" src="img/C++.jpg" alt="C++ illustration">
+      <h2>You should learn C++!</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+    </div>
+    <div class="result" id="ruby">
+      <img class="result-img" class="result-img" src="img/Ruby.jpg" alt="ruby illustration">
+      <h2>You should learn Ruby!</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+    </div>
+    <div class="result" id="sql">
+      <img class="result-img" src="img/sql.png" alt="sql illustration">
+      <h2>You should learn SQL!</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+    </div>
   </div>
 </body>
 </html>
