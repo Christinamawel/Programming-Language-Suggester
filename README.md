@@ -21,7 +21,7 @@ Welcome to my quiz page! this is just a simple webpage with a quiz to give a sug
 
 ## Setup/Installation Requirements
 
-See the page by clicking this link
+See the page by clicking this link https://christinamawel.github.io/Programming-Language-Suggester/
 
 If you would like to download this webpage:
 
