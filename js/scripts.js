@@ -5,6 +5,7 @@ $(document).ready(function(){
   const popular = $("input:radio[name=popular]:checked").val();
   const difficulty = $("input:radio[name=difficulty]:checked").val();
   const color = $("input:radio[name=color]:checked").val();
+  const num = parseInt($("#num").val())
   let js = 0;
   let c = 0;
   let ruby = 0;
@@ -47,8 +48,21 @@ $(document).ready(function(){
   } else {
     sql += 1
   }
+  
+  if (num <= 3) {
+    js += 1
+  } else if (num <= 6) {
+    ruby += 1
+  } else if (num <= 8) {
+    c += 1
+  } else if (num <= 10) {
+    sql += 1
+  } else {
+    $("#error").show();
+  }
 
-  if (js >= ruby && js >= c && js >= sql) {
+  if (!num) {
+  } else if (js >= ruby && js >= c && js >= sql) {
     $("#javascript").show();
   } else if (ruby >= js && ruby >= c && ruby >= sql) {
     $("#ruby").show();
@@ -58,6 +72,8 @@ $(document).ready(function(){
     $("#sql").show();
   }
 
-  $("#quiz").hide();
+  if (num >= 0 && num <= 10) {
+    $("#quiz").hide();
+  }
   });
 });

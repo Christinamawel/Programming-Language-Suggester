@@ -48,7 +48,7 @@ form {
   border-radius: 1em;
 }
 
-label {
+#radio-qs {
   margin-left: 3em;
   padding: .5em;
   display:block;
@@ -64,7 +64,7 @@ label {
   padding-left: .5em;
 }
 
-input {
+.radio-inp {
   position: absolute;
   opacity: 0;
 }
@@ -77,11 +77,11 @@ input {
   border-radius: 50%;
 }
 
-label:hover input ~ .checkmark {
+.checkmark:hover {
   background-color: #ccc;
 }
 
-label input:checked ~ .checkmark {
+#radio-qs input:checked ~ .checkmark {
   background-color: rgb(55, 115, 122);
 }
 
@@ -91,17 +91,41 @@ label input:checked ~ .checkmark {
   display: none;
 }
 
-label input:checked ~ .checkmark:after {
+#radio-qs input:checked ~ .checkmark:after {
   display: block;
 }
 
-label .checkmark:after {
+#radio-qs .checkmark:after {
   left: 6px;
   top: 6px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: white;
+}
+
+#num-label {
+  display: block;
+  margin-left: 3em;
+  padding: .5em;
+  color:rgb(1, 139, 80);
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#num {
+  display: block;
+  width: 75%;
+  height: 2.5em;
+  margin: .5em auto;
+  border: none;
+  border-radius: .5em;
+}
+
+#error {
+  text-align: center;
+  color: rgb(175, 2, 2);
+  display: none;
 }
 
 button {

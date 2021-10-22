@@ -16,88 +16,95 @@
       <img id="hero-img" src="img/hero.jpg" alt="programming illustration">
       <h2 id="quiz-head">Take this quiz to find out!</h2>
       <form id="program-quiz">
-        <div class="radio" id="job-q">
-        <h3 class="question">What job do you think you would most want to do or look into doing?</h3>
-          <label>
-            <input type="radio" name="job" value="engineer" checked>
-            <span class="checkmark"></span>
-            <div class="answer">Software Engineer</div>
-          </label>
-          <label>
-            <input type="radio" name="job" value="backend">
-            <span class="checkmark"></span>
-            <div class="answer">Back End Developer</div>
-          </label>
-          <label>
-            <input type="radio" name="job" value="mobile">
-            <span class="checkmark"></span>
-            <div class="answer">Mobile Developer</div>
-          </label>
-          <label>
-            <input type="radio" name="job" value="data">
-            <span class="checkmark"></span>
-            <div class="answer">Data Scientist</div>
-          </label>
+        <div id ="radio-qs">
+          <div class="radio" id="job-q">
+            <h3 class="question">What job do you think you would most want to do or look into doing?</h3>
+            <label>
+              <input class="radio-inp" type="radio" name="job" value="engineer" checked>
+              <span class="checkmark"></span>
+              <div class="answer">Software Engineer</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="job" value="backend">
+              <span class="checkmark"></span>
+              <div class="answer">Back End Developer</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="job" value="mobile">
+              <span class="checkmark"></span>
+              <div class="answer">Mobile Developer</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="job" value="data">
+              <span class="checkmark"></span>
+              <div class="answer">Data Scientist</div>
+            </label>
+          </div>
+          <div class="radio" id="popular-q">
+            <h3 class="question">Do you want to learn a more popular language or do you want to learn something more specialized?</h3>
+            <label>
+              <input class="radio-inp" type="radio" name="popular" value="mostPop" checked>
+              <span class="checkmark"></span>
+              <div class="answer">I think want to be skilled in the most popular language</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="popular" value="changePop">
+              <span class="checkmark"></span>
+              <div class="answer">I am ok with the popularity fluctuating so long as I can make good money quickly</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="popular" value="steadyPop">
+              <span class="checkmark"></span>
+              <div class="answer">I want to specialize in a language that has a steady popularity</div>
+            </label>
+          </div>
+          <div class="radio" id="difficulty-q">
+            <h3 class="question">Do you want to learn something quickly and easily or do you want to be challenged?</h3>
+            <label>
+              <input class="radio-inp" type="radio" name="difficulty" value="easy" checked>
+              <span class="checkmark"></span>
+              <div class="answer">I want to learn one of the easiest languages and quickest languages</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="difficulty" value="hard">
+              <span class="checkmark"></span>
+              <div class="answer">I want to challenge myself to learn something difficult</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="difficulty" value="med">
+              <span class="checkmark"></span>
+              <div class="answer">I want to learn a language somewhere in the middle</div>
+            </label>
+          </div>
+          <div class="radio" id="color-q">
+            <h3 class="question">What is your favorite color?</h3>
+            <label>
+              <input class="radio-inp" type="radio" name="color" value="blue" checked>
+              <span class="checkmark"></span>
+              <div class="answer">Blue or purple</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="color" value="red">
+              <span class="checkmark"></span>
+              <div class="answer">red or orange</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="color" value="green">
+              <span class="checkmark"></span>
+              <div class="answer">green or yellow</div>
+            </label>
+            <label>
+              <input class="radio-inp" type="radio" name="color" value="black">
+              <span class="checkmark"></span>
+              <div class="answer">black or brown</div>
+            </label>
+          </div>
         </div>
-        <div class="radio" id="popular-q">
-          <h3 class="question">Do you want to learn a more popular language or do you want to learn something more specialized?</h3>
-          <label>
-            <input type="radio" name="popular" value="mostPop" checked>
-            <span class="checkmark"></span>
-            <div class="answer">I think want to be skilled in the most popular language</div>
-          </label>
-          <label>
-            <input type="radio" name="popular" value="changePop">
-            <span class="checkmark"></span>
-            <div class="answer">I am ok with the popularity fluctuating so long as I can make good money quickly</div>
-          </label>
-          <label>
-            <input type="radio" name="popular" value="steadyPop">
-            <span class="checkmark"></span>
-            <div class="answer">I want to specialize in a language that has a steady popularity</div>
-          </label>
+        <div id="number">
+          <label id="num-label" for="num">Choose a number between 1 and 10:</label>
+          <input id="num" type="text">
         </div>
-        <div class="radio" id="difficulty-q">
-          <h3 class="question">Do you want to learn something quickly and easily or do you want to be challenged?</h3>
-          <label>
-            <input type="radio" name="difficulty" value="easy" checked>
-            <span class="checkmark"></span>
-            <div class="answer">I want to learn one of the easiest languages and quickest languages</div>
-          </label>
-          <label>
-            <input type="radio" name="difficulty" value="hard">
-            <span class="checkmark"></span>
-            <div class="answer">I want to challenge myself to learn something difficult</div>
-          </label>
-          <label>
-            <input type="radio" name="difficulty" value="med">
-            <span class="checkmark"></span>
-            <div class="answer">I want to learn a language somewhere in the middle</div>
-          </label>
-        </div>
-        <div class="radio" id="color-q">
-          <h3 class="question">What is your favorite color?</h3>
-          <label>
-            <input type="radio" name="color" value="blue" checked>
-            <span class="checkmark"></span>
-            <div class="answer">Blue or purple</div>
-          </label>
-          <label>
-            <input type="radio" name="color" value="red">
-            <span class="checkmark"></span>
-            <div class="answer">red or orange</div>
-          </label>
-          <label>
-            <input type="radio" name="color" value="green">
-            <span class="checkmark"></span>
-            <div class="answer">green or yellow</div>
-          </label>
-          <label>
-            <input type="radio" name="color" value="black">
-            <span class="checkmark"></span>
-            <div class="answer">black or brown</div>
-          </label>
-        </div>
+        <p id="error">Please type a number between 1 and 10</p>
         <button type="submit">Results</button>
       </form>
     </div>
@@ -120,6 +127,9 @@
       <img class="result-img" src="img/sql.png" alt="sql illustration">
       <h2>You should learn SQL!</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+    </div>
+    <div class="result" id="sql">
+      <img class="result-img" src="img/sql.png" alt="sql illustration">
     </div>
   </div>
 </body>
