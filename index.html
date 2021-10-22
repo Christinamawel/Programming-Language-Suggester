@@ -16,6 +16,10 @@
       <img id="hero-img" src="img/hero.jpg" alt="programming illustration">
       <h2 id="quiz-head">Take this quiz to find out!</h2>
       <form id="program-quiz">
+        <div id = "name-q">
+          <label class="text-label" for="name">What is your Name?</label>
+          <input class="text-input" id="name" type="text">
+        </div>
         <div id ="radio-qs">
           <div class="radio" id="job-q">
             <h3 class="question">What job do you think you would most want to do or look into doing?</h3>
@@ -101,8 +105,8 @@
           </div>
         </div>
         <div id="number">
-          <label id="num-label" for="num">Choose a number between 1 and 10:</label>
-          <input id="num" type="text">
+          <label class="text-label" for="num">Choose a number between 1 and 10:</label>
+          <input class="text-input" id="num" type="text">
         </div>
         <p id="error">Please type a number between 1 and 10</p>
         <button type="submit">Results</button>
@@ -110,23 +114,27 @@
     </div>
     <div class="result" id="javascript">
       <img class="result-img" src="img/javascript.png" alt="javascript illustration">
-      <h2>You should learn JavaScript!</h2>
+      <h2><span class="insert-name"></span>You should learn JavaScript!</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+      <button class="go-back">Retake Quiz</button>
     </div>
     <div class="result" id="c">
       <img class="result-img" src="img/C++.jpg" alt="C++ illustration">
-      <h2>You should learn C++!</h2>
+      <h2><span class="insert-name"></span>You should learn C++!</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+      <button class="go-back">Retake Quiz</button>
     </div>
     <div class="result" id="ruby">
       <img class="result-img" class="result-img" src="img/Ruby.jpg" alt="ruby illustration">
-      <h2>You should learn Ruby!</h2>
+      <h2><span class="insert-name"></span>You should learn Ruby!</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+      <button class="go-back">Retake Quiz</button>
     </div>
     <div class="result" id="sql">
       <img class="result-img" src="img/sql.png" alt="sql illustration">
-      <h2>You should learn SQL!</h2>
+      <h2><span class="insert-name"></span>You should learn SQL!</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero exercitationem nostrum in minus, itaque ipsam quibusdam. Odit non, doloribus necessitatibus placeat nam voluptatum deleniti facilis optio est assumenda commodi illo?</p>
+      <button class="go-back">Retake Quiz</button>
     </div>
     <div class="result" id="sql">
       <img class="result-img" src="img/sql.png" alt="sql illustration">

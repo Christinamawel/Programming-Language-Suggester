@@ -44,12 +44,11 @@ form {
   width: 90%;
   margin: 1em auto;
   background-color:rgb(218, 247, 252);
-  padding-bottom: 1em;
+  padding: 1em 0;
   border-radius: 1em;
 }
 
 #radio-qs {
-  margin-left: 3em;
   padding: .5em;
   display:block;
   cursor: pointer;
@@ -61,7 +60,8 @@ form {
 
 .answer {
   margin-left: 30px;
-  padding-left: .5em;
+  padding-left: 4em;
+  padding-bottom: .75em;
 }
 
 .radio-inp {
@@ -75,6 +75,7 @@ form {
   width: 25px;
   background-color: #eee;
   border-radius: 50%;
+  margin-left: 3em;
 }
 
 .checkmark:hover {
@@ -104,16 +105,16 @@ form {
   background: white;
 }
 
-#num-label {
+.text-label {
   display: block;
-  margin-left: 3em;
+  margin-left: 1em;
   padding: .5em;
   color:rgb(1, 139, 80);
   font-size: 1.4rem;
   font-weight: bold;
 }
 
-#num {
+.text-input {
   display: block;
   width: 75%;
   height: 2.5em;

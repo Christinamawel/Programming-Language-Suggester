@@ -5,11 +5,14 @@ $(document).ready(function(){
   const popular = $("input:radio[name=popular]:checked").val();
   const difficulty = $("input:radio[name=difficulty]:checked").val();
   const color = $("input:radio[name=color]:checked").val();
+  const name = $("#name").val();
   const num = parseInt($("#num").val())
   let js = 0;
   let c = 0;
   let ruby = 0;
   let sql = 0;
+
+  $(".insert-name").text(name + ", ");
 
   if (job === "engineer") {
     js += 1
@@ -75,5 +78,11 @@ $(document).ready(function(){
   if (num >= 0 && num <= 10) {
     $("#quiz").hide();
   }
+  });
+
+  $(".go-back").click(function(event) {
+    event.preventDefault();
+    $("#quiz").show();
+    $(".result").hide();
   });
 });
